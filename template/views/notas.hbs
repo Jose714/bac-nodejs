@@ -1,0 +1,25 @@
+{{>header}}
+
+<div class="container">
+  <h2>SVGA Modulo de notas</h2>
+  <br>
+  <p>Ingrese una nota nueva</p>
+  <form action="/notas" method="post">
+    <div class="form-group">
+      <label >Nombre</label>
+        <select type="spinner"   name="nombre"  class="form-control" placeholder="profesor" required >
+        <option  class="form-control"   required>{{{nota listado}}}</option>
+    </select>
+       
+     <label >Curso</label>
+    <select type="spinner"   name="curso"  class="form-control" placeholder="profesor" required >
+        <option  class="form-control"   required>{{{calificar listado}}}</option>
+    </select>            
+<br>
+  <label >Calificacion</label>
+      <input type="text"  class="form-control"  name="nota"   placeholder="nota del curso" required><br> 
+     <button class="btn btn-dark">Registrar</button>
+   </div>
+ </form>	
+</div>
+{{>footer}}

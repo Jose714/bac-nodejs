@@ -1,0 +1,32 @@
+  
+{{>headerEstudiante}}
+<div class="container">
+  <h2>Bienvenido al Campus Virtual del Tecnológico de Antioquia</h2>
+  <br>
+  <p>Ingrese sus datos en el siguiente formulario de Registro</p>
+  <form action="/regisDocente" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+      <label >Nombre</label>
+      <input type="text"  class="form-control"  name="nombre" placeholder="Nombre de usuario" required><br>   
+      <label >Contraseña</label>
+      <input type="text"  class="form-control"  name="password" placeholder="Contraseña" required><br>  
+       <label >Correo</label>
+      <input type="email"  class="form-control"  name="email" placeholder="Correo electronico" required><br>   
+      <label >Cedula</label>
+      <input type="text"  class="form-control"  name="cedula" placeholder="documento de identidad" required><br>  
+       <label >Telefono</label>
+       <input type="text"  class="form-control"  name="telefono" placeholder="Teléfono" required><br> 
+        <label >Asignatura</label>
+    <select type="spinner"   name="curso"  class="form-control" placeholder="Cursos disponibles" required >
+        <option  class="form-control"   required>{{{verC listado}}}</option>
+    </select>        
+       
+<br>
+  <label >Foto de perfil</label>
+       <input type="file"  class="form-control"  name="archivo"  required><br> 
+     <button class="btn btn-dark">Registrar</button>
+   </div>
+ </form>	
+</div>
+  {{>footer}}
+  

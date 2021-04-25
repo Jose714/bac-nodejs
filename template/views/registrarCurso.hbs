@@ -1,0 +1,27 @@
+  
+{{>header}}
+<div class="container">
+  <h2>Ingrese un nuevo Curso</h2>
+  <br>
+  <p>LLene el siguiente formulario</p>
+  <form action="/registrarCurso" method="post">
+    <div class="form-group">
+      <label >Nombre</label>
+      <input type="text"  class="form-control"  name="curso" placeholder="Nombre del curso" required><br>   
+      <label >Id</label>
+      <input type="text"  class="form-control"  name="id"  placeholder="idCurso" required><br>  
+       <label >Duracion</label>
+      <input type="text"  class="form-control"  name="duracion"   placeholder="Duracion del curso" required><br>   
+      <label >Valor del curso</label>
+      <input type="text"  class="form-control"  name="valor"   placeholder="Valor del curso" required><br>        
+     <label >profesor</label>
+    <select type="spinner"   name="nombre"  class="form-control" placeholder="profesor" required >
+        <option  class="form-control"   required>{{{profe listado}}}</option>
+    </select>        
+       
+<br>
+     <button class="btn btn-dark">Registrar</button>
+   </div>
+ </form>	
+</div>
+  {{>footer}}

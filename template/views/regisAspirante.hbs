@@ -1,0 +1,26 @@
+  
+{{>headerEstudiante}}
+<div class="container">
+      <h2>Bienvenido a matricula Virtual</h2>
+  <br>
+  <p>Ingrese sus datos en el siguiente formulario de Inscripcion</p>
+<form action="/regisAspirante" method="post">
+<div class="form-group">
+	<input type="text"  class="form-control"  name="nombre"  placeholder="Nombre del aspirante" required><br>   
+	<label >Telefono</label>
+	<input type="text"  class="form-control"  name="telefono"   placeholder="Telefono" required><br>  
+	 <label >Cedula</label>
+	<input type="text"  class="form-control"  name="cedula"  placeholder="Numero de cedula" required><br> 
+    <label >cursos</label>
+    <select type="spinner"   name="curso"  class="form-control" placeholder="Cursos disponibles" required >
+        <option  class="form-control"   required>{{{verC listado}}}</option>
+    </select>        
+       
+<br>
+</div>
+<button class="btn btn-dark" >Registrar</button>
+</form>
+ </div>
+  {{>footer}}
+  
+       

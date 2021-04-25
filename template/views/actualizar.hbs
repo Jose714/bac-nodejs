@@ -1,0 +1,22 @@
+{{>header}}
+<div class="container">
+  <h2>Actualizar informacion</h2>
+  <br>
+  <p>Ingrese sus datos en el siguiente formulario de actualizacion</p>
+  <form action="/actualizar" method="post">
+    <div class="form-group">
+      <label >Nombre</label>
+      <input type="text"  class="form-control"  name="nombre" placeholder="Nombre de usuario" required><br>   
+      <label >Contraseña</label>
+      <input type="text"  class="form-control"  name="password" placeholder="Contraseña" required><br>  
+       <label >Correo</label>
+      <input type="text"  class="form-control"  name="correo" placeholder="Correo electronico" required><br>     
+       <label >Telefono</label>
+       <input type="text"  class="form-control"  name="telefono" placeholder="Teléfono" required><br>      
+ 
+     <br>
+     <button class="btn btn-dark">Registrar</button>
+   </div>
+ </form>	
+</div>
+  {{>footer}}
